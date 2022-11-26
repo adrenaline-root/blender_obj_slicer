@@ -1,0 +1,109 @@
+@define-color bg_color rgba(30%, 30%, 30%, 1);
+@define-color dark rgba(20%, 20%, 20%, 1);
+@define-color darker rgba(17%, 17%, 17%, 1);
+@define-color clear_dark rgba(70%, 70%, 70%, 1);
+@define-color btn_active rgba(90%, 40%, 0%, 1);
+
+#MainWindow, dialog {
+	background: @dark;
+	color: @clear_dark;
+  font-family: sans;
+  font-size: 11px;
+}
+
+	
+
+#MenuBar {
+  background: @bg_color;
+}
+
+#ObjectLabel, #SpriteLabel, .mlabel {
+	background: @bg_color;
+	color: #aaaaaa;
+	font-family: sans;
+	font-size: 11px;
+	padding: 2px;
+	padding-left: 4px;
+}
+
+menu {
+  background: none;
+}
+
+menuitem {
+  background-color: @bg_color;
+  color: @clear_dark;
+}
+
+menuitem:hover {
+	background: @dark;
+	}
+
+label:focus {
+  background-color: @dark;
+
+}
+
+paned separator {
+	background: @dark;
+}
+
+paned separator:hover {
+	background: @bg_color;
+}
+
+/** Ventana de Pedido de dimensiones para el laminado **/
+
+#DimensionesDialog {
+	background-color: @bg_color;
+	color: @clear_dark;
+	font-family: sans;
+	font-size: 11px;
+	border-radius: 0px;
+}
+
+#SaveDialog  {
+	background-color: @bg_color;
+	color: @clear_dark;
+	font-family: sans;
+	font-size: 11px;
+	border-radius: 0px;
+}
+
+button {
+	background: none;
+	background-color: @dark;
+	color: @clear_dark;
+	font-family: sans;
+	font-size: 11px;
+	border: none;
+	border-radius: 0px;
+}
+
+button:hover {
+	background-color: #282828;
+}
+
+button:active {
+	background-color: @btn_active;
+	color: white;
+}
+
+spinbutton {
+	background: none;
+	color: @clear_dark;
+	font-family: sans;
+	font-size: 12px;
+}
+
+spinbutton:active {
+	border: 2px solid blue;
+}
+
+entry {
+	background-color: @darker;
+	color: @clear_dark;
+	font-family: sans;
+	font-size: 11px;
+}
+	
